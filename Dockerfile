@@ -4,5 +4,5 @@ RUN javac HelloIppon.java
 
 
 FROM java:8-jre
-COPY --from=builder /HelloIppon .
+COPY --from=builder /HelloIppon.class .
 ENTRYPOINT ["java", "HelloIppon"]
